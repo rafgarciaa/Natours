@@ -1,1 +1,9 @@
 //  CSS mixins live in this file
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both; // makes it work for float left and right
+        display: table;
+    }
+}
