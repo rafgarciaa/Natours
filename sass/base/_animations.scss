@@ -1,0 +1,55 @@
+// CSS animations live in this file
+
+@keyframes moveInLeft {
+    /* Before the animation starts */
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    /* 60% {
+        transform: rotate(180deg);
+    } */
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    /* When the animation ends */
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    /* Before the animation starts */
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    /* When the animation ends */
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    /* Before the animation starts */
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    
+    /* When the animation ends */
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

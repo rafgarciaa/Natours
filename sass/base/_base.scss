@@ -1,0 +1,33 @@
+// basic definitions in our projects
+
+/* Reset Styling */
+/* Universal Selector */
+*,
+*::after,
+*::before { 
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* root */
+
+html {
+    /* 1 rem is exactly 10 pixels */
+    // definies what 1rem is (for the overall project)
+    font-size: 62.5%;
+}
+
+/* Why do we do it this way? 
+
+    We do this because the properties related to font
+    are usually inherited.
+*/
+/* 
+    body is the parent element of all the other elements.
+    Meaning this font definition will be inherited to all the child elements.
+*/
+
+body {
+    box-sizing: border-box;
+}
