@@ -19,6 +19,9 @@ Natours Project is a small HTML & CSS exercise to help me learn:
 
 5) Be able to architect large CSS codebases for reusability and maintainability using Sass.
 
-### Technologies
+### Technologies & Tools
 + HTML
 + CSS
++ npm
++ live-server
++ node-sass
