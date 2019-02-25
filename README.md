@@ -1,4 +1,4 @@
-## Natours Project
+## [Natours](https://rafgarciaa.github.io/Natours/)
 A small landing page for a travel agency startup.
 
 
