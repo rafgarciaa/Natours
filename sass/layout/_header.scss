@@ -12,6 +12,7 @@
     position: relative;
     
     /* clip images to take shape according to the specified specs */
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
     &__logo-box {

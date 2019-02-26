@@ -40,6 +40,15 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
     /* pseudo element which is literally the same as the current button */
     &::after {
         /* content property always necessary */
