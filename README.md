@@ -1,6 +1,5 @@
 ## [Natours](https://rafgarciaa.github.io/Natours/)
-A small landing page for a travel agency startup.
-
+A small landing page for a travel agency startup. This coding exercise capitalizes on the capabilities of HTML and CSS.
 
 Natours Project is a small HTML & CSS exercise to help me learn:
 + complex CSS animations
