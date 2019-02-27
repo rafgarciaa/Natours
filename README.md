@@ -16,7 +16,7 @@ These are some of the key features of this landing page. It's amazing how we can
 ```@keyframes``` animations
 Allows for element to transition from one position to another. This is achieved by defining where elements are positioned at the beginning and at the end of the animation (defined as 0% - 100%  - see below).
 
-![@keyframes animations](https://gfycat.com/ElatedYawningDrongo)
+![@keyframes animations](https://thumbs.gfycat.com/ElatedYawningDrongo-small.gif)
 ```css
 @keyframes moveInLeft {
     /* Before the animation starts */
@@ -75,7 +75,7 @@ Allows for element to transition from one position to another. This is achieved 
 
 Image Transitions - each image is emphasized as it's hovered over giving a 3d-esque feel to the webpage. This is achieved by scaling-up the current image being hovered over and scale-down the other photos.
 
-![Image Transitions](https://gfycat.com/SoulfulAdvancedAtlasmoth)
+![Image Transitions](https://thumbs.gfycat.com/SoulfulAdvancedAtlasmoth-small.gif)
 ```css
 .composition {
     position: relative;
@@ -125,7 +125,7 @@ Image Transitions - each image is emphasized as it's hovered over giving a 3d-es
 
 Card Animations - my most favorite feature of this page. This card animation is achieved by creating two div elements on top of each other and declaring the property of both the `front` and the `back` side of each card ```backface-visibility: hidden``` and then giving each side it's own styling accordingly. This segment of this page also reuses the button component similar to the "Discover our tours" button at the top of the page.
 
-![card animations](https://gfycat.com/TemptingPeskyLadybird)
+![card animations](https://thumbs.gfycat.com/TemptingPeskyLadybird-small.gif)
 ```css
 &__side {
     height: 52rem;
