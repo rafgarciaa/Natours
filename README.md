@@ -18,7 +18,7 @@ Allows for element to transition from one position to another. This is achieved 
 
 
 <p align="center">
-    ![@keyframes animations](https://thumbs.gfycat.com/ElatedYawningDrongo-small.gif)
+    <img src="https://thumbs.gfycat.com/ElatedYawningDrongo-small.gif">
 </p>
 
 ```css
@@ -80,7 +80,7 @@ Allows for element to transition from one position to another. This is achieved 
 Image Transitions - each image is emphasized as it's hovered over giving a 3d-esque feel to the webpage. This is achieved by scaling-up the current image being hovered over and scale-down the other photos.
 
 <p align="center">
-    ![Image Transitions](https://thumbs.gfycat.com/SoulfulAdvancedAtlasmoth-small.gif)
+    <img src="https://thumbs.gfycat.com/SoulfulAdvancedAtlasmoth-small.gif">
 </p>
 
 ```css
@@ -133,7 +133,7 @@ Image Transitions - each image is emphasized as it's hovered over giving a 3d-es
 Card Animations - my most favorite feature of this page. This card animation is achieved by creating two div elements on top of each other and declaring the property of both the `front` and the `back` side of each card ```backface-visibility: hidden``` and then giving each side it's own styling accordingly. This segment of this page also reuses the button component similar to the "Discover our tours" button at the top of the page.
 
 <p align="center">
-![card animations](https://thumbs.gfycat.com/TemptingPeskyLadybird-small.gif)
+    <img src="https://thumbs.gfycat.com/TemptingPeskyLadybird-small.gif">
 </p>
 
 ```css
