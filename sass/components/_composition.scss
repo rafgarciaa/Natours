@@ -1,6 +1,7 @@
 .composition {
     position: relative;
 
+    // photo styling
     &__photo {
         width: 55%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
@@ -10,6 +11,7 @@
         transition: all .2s;
         outline-offset: 2rem;
 
+        // photo positions
         &--p1 {
             left: 0;
             top: -2rem;
@@ -25,6 +27,7 @@
             top: 12rem;
         }
 
+        // hover effect on all photos
         &:hover {
             outline: 1.5rem solid $color-primary;
             transform: scale(1.05) translateY(-.5rem);
@@ -34,6 +37,7 @@
     }
 
     // composition:hover composition__photo:not(:hover)
+    // all the photos except the photo currently hovered will scale smaller
     &:hover &__photo:not(:hover) {
         transform: scale(.95);
     }
