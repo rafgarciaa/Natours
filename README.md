@@ -3,18 +3,17 @@ A small landing page for a travel agency startup. This coding exercise capitaliz
 
 ## Goals
 1) Be up to speed with the most modern and advanced CSS properties and techniques;
-
 2) Be ready to build responsive layouts for all kind of devices and situations;
-
 3) Truly understand how CSS works behind the scenes;
-
 4) Be able to architect large CSS codebases for reusability and maintainability using Sass.
 
 ## Features & Code Snippets
 These are some of the key features of this landing page. It's amazing how we can capitalize the different tricks and techniques available in CSS.
 
-```@keyframes``` animations
-Allows for element to transition from one position to another. This is achieved by defining where elements are positioned at the beginning and at the end of the animation (defined as 0% - 100%  - see below).
+---
+
+### ```@keyframes``` animations
+this feature allows for elements to transition from one position to another. This is achieved by defining where elements are positioned at the beginning and at the end of the animation (defined as 0% - 100%  - see below).
 
 
 <p align="center">
@@ -77,7 +76,8 @@ Allows for element to transition from one position to another. This is achieved 
 }
 ```
 
-Image Transitions - each image is emphasized as it's hovered over giving a 3d-esque feel to the webpage. This is achieved by scaling-up the current image being hovered over and scale-down the other photos.
+### Image Transitions
+Each image is emphasized as it's hovered over giving a 3d-esque feel to the webpage. This is achieved by scaling-up the current image being hovered over and scale-down the other photos.
 
 <p align="center">
     <img src="https://thumbs.gfycat.com/SoulfulAdvancedAtlasmoth-small.gif">
@@ -130,7 +130,8 @@ Image Transitions - each image is emphasized as it's hovered over giving a 3d-es
 }
 ```
 
-Card Animations - my most favorite feature of this page. This card animation is achieved by creating two div elements on top of each other and declaring the property of both the `front` and the `back` side of each card ```backface-visibility: hidden``` and then giving each side it's own styling accordingly. This segment of this page also reuses the button component similar to the "Discover our tours" button at the top of the page.
+### Card Animations
+Probably my most favorite feature of this page. This card animation is achieved by creating two div elements, front-side and back side, styled to be on top of each other achieved by the property ```backface-visibility: hidden``` and then giving each side it's own styling accordingly. This segment of this page also reuses the button component similar to the "Discover our tours" button at the top of the page.
 
 <p align="center">
     <img src="https://thumbs.gfycat.com/TemptingPeskyLadybird-small.gif">
@@ -179,7 +180,7 @@ Card Animations - my most favorite feature of this page. This card animation is 
 }
 ```
 
-### Technologies & Tools
+## Technologies & Tools
 + HTML5
 + CSS3
 + npm
