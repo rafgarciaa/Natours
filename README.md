@@ -249,8 +249,3 @@ Additionally, the image itself scales-down and blurs as this content section is 
 + npm
 + live-server
 + node-sass
-
-## Disclaimer
-
-Design and Copyright by Jonas Schmedtmann.
-Built by Rafael Garcia for his online course, Advanced CSS & SASS.
