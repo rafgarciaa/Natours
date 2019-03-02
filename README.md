@@ -180,6 +180,69 @@ Probably my most favorite feature of this page. This card animation is achieved 
 }
 ```
 
+### Stories Section
+This landing page also features a stories section where people review their experiences of the tours. The main highlights of this page is the background video (for this entire section), the container of the review being skewed into a parallelogram shape, and how the text *wraps* around the shape of the image.
+
+<p align="center">
+    <img src="https://thumbs.gfycat.com/ElderlyFlawedGrosbeak-size_restricted.gif">
+</p>
+
+The background video styling is achieved by position the video element absolute, relative to its parent container. It was also given a relatively low z-index and a slightly lower opacity to give it a blur effect. Lastly, it was given a object-fit property of cover to make sure that the video's aspect ratio is kept.
+
+```css
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+    opacity: .15;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+```
+
+<p align="center">
+    <img src="https://thumbs.gfycat.com/GenerousImmaculateHoneybee-small.gif">
+</p>
+
+For the main content of this features section, we can see that the container is skewed into a parallelogram shape, and the text *wraps* around the image. The parallelogram shape of background of the container is achieved by skewing it by x degrees (in this case -12 degrees as seen below), and making sure that the rest of the contents inside of the container itself is skewed 12 degrees (opposite of its parent container).
+
+Now the *wrapping around* of the text to the shape of the image is achieved by using CSS propert called, `shape-outside` and giving its specified values. Note however, that this will only work if the element has defined dimensions (width and height as seen on the code below).
+
+```css
+.story {
+    transform: skewX(-12deg);
+
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        // shape outside only works if the element has a property of float, width and height
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem) skewX(12deg);
+    }
+}
+```
+
+Additionally, the image itself scales-down and blurs as this content section is hovered over. This can be achieved by using a CSS property called `filter` and a value of `blur` as seen in the code below.
+
+```css
+&:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
+}
+```
+
 ## Technologies & Tools
 + HTML5
 + CSS3
