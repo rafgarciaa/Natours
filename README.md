@@ -186,3 +186,8 @@ Probably my most favorite feature of this page. This card animation is achieved 
 + npm
 + live-server
 + node-sass
+
+## Disclaimer
+
+Design and Copyright by Jonas Schmedtmann.
+Built by Rafael Garcia for his online course, Advanced CSS & SASS.
