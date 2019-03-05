@@ -13,6 +13,27 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+            
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your Benefits</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -340,18 +361,36 @@
                             <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
                             <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
                             <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                            <li class="footer__item"><a href="http://rafgarcia.io" target="_blank" class="footer__link">Hire Me!</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Built by <a href="https://github.com/rafgarciaa" target="_blank" class="footer__link">Rafael Garcia</a> for his online course.
+                        Built by <a href="https://github.com/rafgarciaa" target="_blank" class="footer__link">Rafael Garcia</a>.
                     </p>
                     <p class="footer__copyright">Design & Copyright &copy; by Jonas Schmedtmann.</p>
                 </div>
             </div>
         </footer>
+
+        <div class="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="../img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="../img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                    <p class="popup__text u-margin-bottom-medium">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quod sunt amet assumenda quasi inventore ut quas eaque et in, perferendis facilis dicta? Aperiam exercitationem voluptate quidem at error obcaecati. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo pariatur nisi cumque, magnam accusantium neque perspiciatis accusamus quae totam esse, repellat officiis reprehenderit, sit fugit temporibus iusto nam sapiente nostrum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita repellat eos corrupti perferendis maxime, ducimus cupiditate modi provident error possimus inventore sint adipisci totam nesciunt voluptatibus, voluptates nisi omnis et.
+                    </p>
+                    <a href="#" class="btn btn--green">Book Now</a>
+                </div>
+            </div>
+        </div>
 
         <!--
         <section class="grid-test">
