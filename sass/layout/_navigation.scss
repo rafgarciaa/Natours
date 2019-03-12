@@ -82,7 +82,6 @@
             color: $color-primary;
             transform: translateX(1rem);
         }
-
     }
 
     // FUNCTIONALITY
@@ -130,6 +129,7 @@
         top: 1rem;
     }
 
+    // NAV BUTTON ANIMATION
     &__checkbox:checked + &__button &__icon {
         translate: all .5s;
         background-color: transparent;
