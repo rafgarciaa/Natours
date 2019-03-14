@@ -15,7 +15,20 @@
 html {
     /* 1 rem is exactly 10 pixels */
     // definies what 1rem is (for the overall project)
-    font-size: 62.5%;
+    font-size: 62.5%;  // 1rem = 10px; 10px/16px = 62.5%
+
+    @include respond(tab-land) { // width < 900?
+        font-size: 56.25%; // 1rem = 9px; 9/16 = 50%;
+    }
+
+    @include respond(tab-port) { // width < 600?
+        font-size: 50%; // 1rem = 8px; 8/16 = 50%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; // 1rem = 12, 12/16
+    }
+    
 }
 
 /* Why do we do it this way? 
@@ -30,4 +43,9 @@ html {
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }
