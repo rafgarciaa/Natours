@@ -21,11 +21,26 @@
         // opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
+
+        @include respond(tab-land) {
+            display: block;
+        }
     }
 
     &__left {
         display: table-cell;
         width: 33.3333333%;
+
+        @include respond(tab-land) {
+            display: block;
+            width: 100%;
+            @include clearfix;
+        }
+
+        @include respond(tab-port) {
+            display: block;
+            width: 100%;
+        }
     }
     
     &__right {
@@ -33,11 +48,34 @@
         width: 66.66666667%;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tab-land) {
+            display: block;
+            width: 100%;
+            position: relative;
+        }
+
+        @include respond(phone) {
+            padding: 3rem 4rem;
+        }
     }
 
     &__img {
         display: block;
         width: 100%;
+
+        @include respond(tab-land) {
+            display: inline-block;
+            width: 50%;
+            float: left;
+            height: 25rem;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &__text {
@@ -55,6 +93,14 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        @include respond(phone) {
+            -webkit-column-count: 1;
+            column-count: 1;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+        }
     }
 
     // OPEN STATE
@@ -79,6 +125,11 @@
             text-decoration: none;
             display: inline-block;
             line-height: 1;
+
+            @include respond(phone) {
+                top: 1.5rem;
+                right: 1.5rem;
+            }
         }
 
         &:hover {
