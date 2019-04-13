@@ -243,6 +243,46 @@ Additionally, the image itself scales-down and blurs as this content section is 
 }
 ```
 
+## Responsive Design
+This page also utilizes a responsive design to provide seamless user-experience to all users across all devices. This is achieved by utilizing a ```mixin``` where it takes in a breakpoint and with that, determins the max-width of the current viewport the app is being viewed from.
+
+```css
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content }; // 600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content }; // 900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) { @content }; // 1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content }; // 1800px
+    }
+}
+```
+
+### Key Feature Differences from Desktop/Laptop App
+
+#### Images
+<p align="center">
+    <img src="./img/image_tab.png" width="50%">
+</p>
+
+#### Cards
+<p align="center">
+    <img src="./img/card_tab.png" width="50%">
+</p>
+
+#### Features
+<p align="center">
+    <img src="./img/features_tab.png" width="50%">
+</p>
+
 ## Technologies & Tools
 + HTML5
 + CSS3
