@@ -1,5 +1,5 @@
 ## [Natours](https://rafgarciaa.github.io/Natours/)
-A small landing page for a travel agency startup. This coding exercise capitalizes on the capabilities of HTML and CSS.
+A mockup landing page for a travel agency startup. This coding exercise capitalizes on the capabilities of HTML and CSS.
 
 ## Goals
 1) Be up to speed with the most modern and advanced CSS properties and techniques;
