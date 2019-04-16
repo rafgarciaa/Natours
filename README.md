@@ -269,11 +269,13 @@ This page also utilizes a responsive design to provide seamless user-experience 
 ### Key Feature Differences from Desktop/Laptop App
 
 #### Images
+Images are aligned differently in tablet/mobile screens.
 <p align="center">
     <img src="./img/image_tab.png" width="50%">
 </p>
 
 #### Cards
+Since there is no cursors
 <p align="center">
     <img src="./img/card_tab.png" width="50%">
 </p>
@@ -287,5 +289,5 @@ This page also utilizes a responsive design to provide seamless user-experience 
 + HTML5
 + CSS3
 + npm
-+ live-server
 + node-sass
++ live-server
