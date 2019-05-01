@@ -1,7 +1,7 @@
 // header layout
 
 .header {
-    height: 95vh;
+    height: 85vh;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
@@ -11,12 +11,16 @@
     background-position: top;
     position: relative;
     
-    /* clip images to take shape according to the specified specs */
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        /* clip images to take shape according to the specified specs */
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        height: 95vh
+    }
 
     @media (min-resolution: 192dpi) and (min-width: 37em), 
-           (min-width: 125em) { 
+           (-webkit-min-device-pixel-ratio: 2) and (min-width: 37em),  // for safari support 
+           (min-width: 125em) {
         // large version of the image is shown if we have a 2x screen and the screen size is bigger than 600px
         // OR if the screen size has a width 2000px
         background-image: linear-gradient(

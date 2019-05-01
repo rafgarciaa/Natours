@@ -8,7 +8,13 @@
     z-index: 5000; 
     opacity: 0;
     visibility: hidden;
-    transition: all .3s; 
+    transition: all .3s;
+
+    @supports (-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem)) { // graceful degredation
+        -webkit-backdrop-filter: blur(1rem);
+        backdrop-filter: blur(1rem);
+        background-color: ($color-black, 0.3);
+    }
     
     &__content {
         @include centerHorizontalVertical;
